@@ -9,9 +9,9 @@ import Foundation
 
 class Service {
     
-    public static func tempRequest(request: Model.Request,
+    public static func tempRequest(request: Mission.Request,
                                    completion:
-                                   @escaping (Result<Model.Response, NetworkError>) -> Void) {
+                                   @escaping (Result<Mission.Response, NetworkError>) -> Void) {
         
         if let data = makeContentBody(encode: request), let url = request.getRequestURL() {
             makePostRequest(postData: data, url: url, header: request.header) { data, response, error in
@@ -24,7 +24,7 @@ class Service {
                 }
                 guard let data = data else { return }
                 do {
-                    let result = try JSONDecoder().decode(Model.Response.self, from: data)
+                    let result = try JSONDecoder().decode(Mission.Response.self, from: data)
                     completion(.success(result))
                     
                 } catch {
