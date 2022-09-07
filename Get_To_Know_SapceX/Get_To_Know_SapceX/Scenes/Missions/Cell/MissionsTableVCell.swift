@@ -9,6 +9,11 @@ import UIKit
 
 class MissionsTableVCell: UITableViewCell {
 
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var iconImgView: UIImageView!
+    @IBOutlet weak var fireDateLbl: UILabel!
+    @IBOutlet weak var resultLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

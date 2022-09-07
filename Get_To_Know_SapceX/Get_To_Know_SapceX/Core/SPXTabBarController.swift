@@ -11,7 +11,7 @@ class SPXTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewControllers = [HomeViewController(), Bookmark_VC()]
+        self.viewControllers = [Missions_VC(), Bookmark_VC()]
     }
 
 }

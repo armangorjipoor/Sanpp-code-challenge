@@ -16,8 +16,6 @@
 		CC7E4F5528C762AC0036A7BE /* Network+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F5428C762AC0036A7BE /* Network+Description.swift */; };
 		CC7E4F5728C766BF0036A7BE /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F5628C766BF0036A7BE /* AppManager.swift */; };
 		CC7E4F5B28C767580036A7BE /* SPXTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F5A28C767580036A7BE /* SPXTabBarController.swift */; };
-		CC7E4F5E28C76BAA0036A7BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F5C28C76BAA0036A7BE /* HomeViewController.swift */; };
-		CC7E4F5F28C76BAA0036A7BE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC7E4F5D28C76BAA0036A7BE /* HomeViewController.xib */; };
 		CC7E4F6228C76BCF0036A7BE /* Bookmark_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F6028C76BCF0036A7BE /* Bookmark_VC.swift */; };
 		CC7E4F6328C76BCF0036A7BE /* BookMark_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC7E4F6128C76BCF0036A7BE /* BookMark_VC.xib */; };
 		CC7E4F6528C76D710036A7BE /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F6428C76D710036A7BE /* HttpMethod.swift */; };
@@ -55,6 +53,23 @@
 		CCCC89F928C928DB00D0864F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC89D428C928BD00D0864F /* String+Extensions.swift */; };
 		CCCC89FA28C928DB00D0864F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC89D628C928BD00D0864F /* NavigationBar.swift */; };
 		CCCC89FC28C92AAB00D0864F /* SPXActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC89FB28C92AAB00D0864F /* SPXActivityIndicator.swift */; };
+		CCCC89FF28C92DB400D0864F /* SPXBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC89FE28C92DB400D0864F /* SPXBaseViewController.swift */; };
+		CCCC8A0228C92E0300D0864F /* Missions_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC8A0028C92E0300D0864F /* Missions_VC.swift */; };
+		CCCC8A0328C92E0300D0864F /* Missions_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0128C92E0300D0864F /* Missions_VC.xib */; };
+		CCCC8A1528C9340600D0864F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0A28C933F300D0864F /* Roboto-Light.ttf */; };
+		CCCC8A1628C9340600D0864F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0928C933F300D0864F /* Roboto-Medium.ttf */; };
+		CCCC8A1728C9340600D0864F /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0E28C933F400D0864F /* Roboto-BoldItalic.ttf */; };
+		CCCC8A1828C9340600D0864F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A1028C933F400D0864F /* Roboto-Italic.ttf */; };
+		CCCC8A1928C9340600D0864F /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0D28C933F300D0864F /* Roboto-ThinItalic.ttf */; };
+		CCCC8A1A28C9340600D0864F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0F28C933F400D0864F /* Roboto-LightItalic.ttf */; };
+		CCCC8A1B28C9340600D0864F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0B28C933F300D0864F /* Roboto-Regular.ttf */; };
+		CCCC8A1C28C9340600D0864F /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A0C28C933F300D0864F /* Roboto-MediumItalic.ttf */; };
+		CCCC8A1D28C9340600D0864F /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A1128C933F400D0864F /* Roboto-BlackItalic.ttf */; };
+		CCCC8A1E28C9340600D0864F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A1228C933F400D0864F /* Roboto-Bold.ttf */; };
+		CCCC8A1F28C9340600D0864F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A1328C933F400D0864F /* Roboto-Thin.ttf */; };
+		CCCC8A2028C9340600D0864F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCCC8A1428C933F400D0864F /* Roboto-Black.ttf */; };
+		CCCC8A2228C9363100D0864F /* Missions_VC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC8A2128C9363100D0864F /* Missions_VC+Extension.swift */; };
+		CCCC8A2728C93FE500D0864F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC8A2628C93FE500D0864F /* Util.swift */; };
 		FAC933E539A6C439AE49089B /* Pods_Get_To_Know_SapceX_Get_To_Know_SapceXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BFE0C1675DCBF2098E02A /* Pods_Get_To_Know_SapceX_Get_To_Know_SapceXUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,8 +105,6 @@
 		CC7E4F5428C762AC0036A7BE /* Network+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Description.swift"; sourceTree = "<group>"; };
 		CC7E4F5628C766BF0036A7BE /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		CC7E4F5A28C767580036A7BE /* SPXTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPXTabBarController.swift; sourceTree = "<group>"; };
-		CC7E4F5C28C76BAA0036A7BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CC7E4F5D28C76BAA0036A7BE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		CC7E4F6028C76BCF0036A7BE /* Bookmark_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark_VC.swift; sourceTree = "<group>"; };
 		CC7E4F6128C76BCF0036A7BE /* BookMark_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMark_VC.xib; sourceTree = "<group>"; };
 		CC7E4F6428C76D710036A7BE /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
@@ -133,6 +146,23 @@
 		CCCC89E328C928BD00D0864F /* Locale+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extensions.swift"; sourceTree = "<group>"; };
 		CCCC89E428C928BD00D0864F /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		CCCC89FB28C92AAB00D0864F /* SPXActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPXActivityIndicator.swift; sourceTree = "<group>"; };
+		CCCC89FE28C92DB400D0864F /* SPXBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPXBaseViewController.swift; sourceTree = "<group>"; };
+		CCCC8A0028C92E0300D0864F /* Missions_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions_VC.swift; sourceTree = "<group>"; };
+		CCCC8A0128C92E0300D0864F /* Missions_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Missions_VC.xib; sourceTree = "<group>"; };
+		CCCC8A0928C933F300D0864F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CCCC8A0A28C933F300D0864F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		CCCC8A0B28C933F300D0864F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CCCC8A0C28C933F300D0864F /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CCCC8A0D28C933F300D0864F /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CCCC8A0E28C933F400D0864F /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CCCC8A0F28C933F400D0864F /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		CCCC8A1028C933F400D0864F /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		CCCC8A1128C933F400D0864F /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CCCC8A1228C933F400D0864F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CCCC8A1328C933F400D0864F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		CCCC8A1428C933F400D0864F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		CCCC8A2128C9363100D0864F /* Missions_VC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Missions_VC+Extension.swift"; sourceTree = "<group>"; };
+		CCCC8A2628C93FE500D0864F /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		F5796F167C224C0841CFBCF4 /* Pods_Get_To_Know_SapceXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_To_Know_SapceXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF32AECF588BEDA4D1C32B /* Pods-Get_To_Know_SapceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get_To_Know_SapceX.debug.xcconfig"; path = "Target Support Files/Pods-Get_To_Know_SapceX/Pods-Get_To_Know_SapceX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,8 +221,10 @@
 		CC0376D728C761500096454C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CCCC89FE28C92DB400D0864F /* SPXBaseViewController.swift */,
 				CC7E4F5A28C767580036A7BE /* SPXTabBarController.swift */,
 				CC7E4F5628C766BF0036A7BE /* AppManager.swift */,
+				CCCC8A2528C93FD300D0864F /* Helper */,
 				CC7E4F5128C762570036A7BE /* Network */,
 				CCCC89FD28C92AFD00D0864F /* Custom Views */,
 			);
@@ -239,14 +271,11 @@
 			children = (
 				CC0376D728C761500096454C /* Core */,
 				CCCC89CE28C928BC00D0864F /* Extensions */,
-				CC87558228C7596D00C80E3E /* ViewController.swift */,
-				CC7E4F5C28C76BAA0036A7BE /* HomeViewController.swift */,
-				CC7E4F6028C76BCF0036A7BE /* Bookmark_VC.swift */,
-				CCCC89CC28C9282F00D0864F /* View */,
 				CCCC89C728C927E700D0864F /* Model */,
-				CC7E4F6128C76BCF0036A7BE /* BookMark_VC.xib */,
-				CC7E4F5D28C76BAA0036A7BE /* HomeViewController.xib */,
+				CC87558228C7596D00C80E3E /* ViewController.swift */,
+				CCCC8A0428C92F6700D0864F /* Scenes */,
 				CC0376D628C761120096454C /* Main */,
+				CCCC8A0728C933D500D0864F /* Resource */,
 				CC87558C28C7596F00C80E3E /* Info.plist */,
 				CC87557E28C7596D00C80E3E /* AppDelegate.swift */,
 				CC87558028C7596D00C80E3E /* SceneDelegate.swift */,
@@ -279,21 +308,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CCCC89CC28C9282F00D0864F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CCCC89CD28C9284100D0864F /* Cells */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CCCC89CD28C9284100D0864F /* Cells */ = {
+		CCCC89CD28C9284100D0864F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				CCCC89C828C9282300D0864F /* MissionsTableVCell.swift */,
 				CCCC89C928C9282300D0864F /* MissionsTableVCell.xib */,
 			);
-			path = Cells;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		CCCC89CE28C928BC00D0864F /* Extensions */ = {
@@ -330,6 +351,70 @@
 				CCCC89FB28C92AAB00D0864F /* SPXActivityIndicator.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CCCC8A0428C92F6700D0864F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CCCC8A0628C92FA600D0864F /* Bookmarks */,
+				CCCC8A0528C92F8000D0864F /* Missions */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CCCC8A0528C92F8000D0864F /* Missions */ = {
+			isa = PBXGroup;
+			children = (
+				CCCC89CD28C9284100D0864F /* Cell */,
+				CCCC8A0028C92E0300D0864F /* Missions_VC.swift */,
+				CCCC8A2128C9363100D0864F /* Missions_VC+Extension.swift */,
+				CCCC8A0128C92E0300D0864F /* Missions_VC.xib */,
+			);
+			path = Missions;
+			sourceTree = "<group>";
+		};
+		CCCC8A0628C92FA600D0864F /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E4F6028C76BCF0036A7BE /* Bookmark_VC.swift */,
+				CC7E4F6128C76BCF0036A7BE /* BookMark_VC.xib */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		CCCC8A0728C933D500D0864F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CCCC8A0828C933F300D0864F /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CCCC8A0828C933F300D0864F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CCCC8A0928C933F300D0864F /* Roboto-Medium.ttf */,
+				CCCC8A0A28C933F300D0864F /* Roboto-Light.ttf */,
+				CCCC8A0B28C933F300D0864F /* Roboto-Regular.ttf */,
+				CCCC8A0C28C933F300D0864F /* Roboto-MediumItalic.ttf */,
+				CCCC8A0D28C933F300D0864F /* Roboto-ThinItalic.ttf */,
+				CCCC8A0E28C933F400D0864F /* Roboto-BoldItalic.ttf */,
+				CCCC8A0F28C933F400D0864F /* Roboto-LightItalic.ttf */,
+				CCCC8A1028C933F400D0864F /* Roboto-Italic.ttf */,
+				CCCC8A1128C933F400D0864F /* Roboto-BlackItalic.ttf */,
+				CCCC8A1228C933F400D0864F /* Roboto-Bold.ttf */,
+				CCCC8A1328C933F400D0864F /* Roboto-Thin.ttf */,
+				CCCC8A1428C933F400D0864F /* Roboto-Black.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		CCCC8A2528C93FD300D0864F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CCCC8A2628C93FE500D0864F /* Util.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		D1D2D6CB9FBA0356836CBD40 /* Frameworks */ = {
@@ -451,12 +536,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCC8A1728C9340600D0864F /* Roboto-BoldItalic.ttf in Resources */,
+				CCCC8A1628C9340600D0864F /* Roboto-Medium.ttf in Resources */,
+				CCCC8A1F28C9340600D0864F /* Roboto-Thin.ttf in Resources */,
+				CCCC8A1A28C9340600D0864F /* Roboto-LightItalic.ttf in Resources */,
 				CCCC89CB28C9282300D0864F /* MissionsTableVCell.xib in Resources */,
+				CCCC8A2028C9340600D0864F /* Roboto-Black.ttf in Resources */,
+				CCCC8A1C28C9340600D0864F /* Roboto-MediumItalic.ttf in Resources */,
+				CCCC8A1928C9340600D0864F /* Roboto-ThinItalic.ttf in Resources */,
+				CCCC8A0328C92E0300D0864F /* Missions_VC.xib in Resources */,
+				CCCC8A1D28C9340600D0864F /* Roboto-BlackItalic.ttf in Resources */,
 				CC7E4F6328C76BCF0036A7BE /* BookMark_VC.xib in Resources */,
 				CC87558B28C7596F00C80E3E /* LaunchScreen.storyboard in Resources */,
+				CCCC8A1528C9340600D0864F /* Roboto-Light.ttf in Resources */,
+				CCCC8A1828C9340600D0864F /* Roboto-Italic.ttf in Resources */,
+				CCCC8A1B28C9340600D0864F /* Roboto-Regular.ttf in Resources */,
 				CC87558828C7596F00C80E3E /* Assets.xcassets in Resources */,
+				CCCC8A1E28C9340600D0864F /* Roboto-Bold.ttf in Resources */,
 				CC87558628C7596D00C80E3E /* Main.storyboard in Resources */,
-				CC7E4F5F28C76BAA0036A7BE /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,10 +690,12 @@
 				CC7E4F5B28C767580036A7BE /* SPXTabBarController.swift in Sources */,
 				CCCC89E628C928DB00D0864F /* GradientLayer.swift in Sources */,
 				CCCC89FC28C92AAB00D0864F /* SPXActivityIndicator.swift in Sources */,
+				CCCC8A2228C9363100D0864F /* Missions_VC+Extension.swift in Sources */,
 				CCCC89F228C928DB00D0864F /* Data+Extension.swift in Sources */,
 				CC7E4F4C28C761E00036A7BE /* Service.swift in Sources */,
 				CCCC89CA28C9282300D0864F /* MissionsTableVCell.swift in Sources */,
 				CCCC89F328C928DB00D0864F /* UIAlertController+Extensions.swift in Sources */,
+				CCCC89FF28C92DB400D0864F /* SPXBaseViewController.swift in Sources */,
 				CC7E4F5028C762450036A7BE /* NetworkError.swift in Sources */,
 				CCCC89F428C928DB00D0864F /* UIColor+Extensions.swift in Sources */,
 				CC7E4F5328C762800036A7BE /* HeaderHelper.swift in Sources */,
@@ -609,12 +708,13 @@
 				CCCC89EF28C928DB00D0864F /* Common+Extensions.swift in Sources */,
 				CCCC89F528C928DB00D0864F /* UIButton+Extension.swift in Sources */,
 				CCCC89EE28C928DB00D0864F /* TimeInterval.swift in Sources */,
+				CCCC8A2728C93FE500D0864F /* Util.swift in Sources */,
 				CCCC89F728C928DB00D0864F /* Date.swift in Sources */,
 				CCCC89E828C928DB00D0864F /* UIView+Extensions.swift in Sources */,
 				CC7E4F6228C76BCF0036A7BE /* Bookmark_VC.swift in Sources */,
+				CCCC8A0228C92E0300D0864F /* Missions_VC.swift in Sources */,
 				CCCC89F028C928DB00D0864F /* Locale+Extensions.swift in Sources */,
 				CC7E4F5528C762AC0036A7BE /* Network+Description.swift in Sources */,
-				CC7E4F5E28C76BAA0036A7BE /* HomeViewController.swift in Sources */,
 				CCCC89F628C928DB00D0864F /* UIViewController+Extensions.swift in Sources */,
 				CC7E4F5728C766BF0036A7BE /* AppManager.swift in Sources */,
 				CC87557F28C7596D00C80E3E /* AppDelegate.swift in Sources */,

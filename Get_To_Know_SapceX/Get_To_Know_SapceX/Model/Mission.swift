@@ -49,7 +49,7 @@ struct Mission {
 
     struct Response: Codable {
         let docs: [Doc]
-        let totalDocs, limit, totalPages, page: Int?
+        let totalDocs, limit, totalPages, page: Int
         let pagingCounter: Int
         let hasPrevPage, hasNextPage: Bool?
         let prevPage, nextPage: Int?
@@ -57,49 +57,58 @@ struct Mission {
 
     // MARK: - Doc
     struct Doc: Codable {
-        let fairings: Fairings?
-        let links: Links
-        let staticFireDateUTC: String?
+       
+//        let fairings: Fairings?
+        let links: Links?
+        /*let staticFireDateUTC: String?
+        */
+        
 //        let staticFireDateUnix: Int?
-        let net: Bool
-        let window: Int?
-        let rocket: Rocket
-        let success: Bool
-        let details: String?
-        let crew: [Crew]
-        let ships, capsules, payloads: [String]
+        
+//        let net: Bool
+//        let window: Int?
+//        let rocket: Rocket
+        let success: Bool?
+          let details: String?
+        /* let crew: [Crew]
+        let ships, capsules, payloads: [String]*/
+        
 //        let launchpad: Launchpad
 //        let flightNumber: Int
-        let name, dateUTC: String
+        
+        let name: String
+        let dateUTC: String
+        /*
         let dateUnix: Int
         let dateLocal: String
+        */
 //        let datePrecision: DatePrecision
 //        let upcoming: Bool
-        let cores: [Core]
+        /*let cores: [Core]*/
 //        let autoUpdate, tbd: Bool
 //        let launchLibraryID: String?
         let id: String
 
         enum CodingKeys: String, CodingKey {
             case links
-            case fairings
-            case staticFireDateUTC = "static_fire_date_utc"
+//            case fairings
+//            case staticFireDateUTC = "static_fire_date_utc"
 //            case staticFireDateUnix = "static_fire_date_unix"
-            case net,ships, capsules, payloads
+//            case net,ships, capsules, payloads
             case success
-            case window
+//            case window
 //            case launchpad
-            case rocket
-            case crew
+//            case rocket
+//            case crew
 //            case flightNumber = "flight_number"
             case name
             case dateUTC = "date_utc"
-            case dateUnix = "date_unix"
-            case dateLocal = "date_local"
+//            case dateUnix = "date_unix"
+//            case dateLocal = "date_local"
 //            case datePrecision = "date_precision"
 //            case upcoming
             case details
-            case cores
+//            case cores
 //            case autoUpdate = "auto_update"
 //            case tbd
 //            case launchLibraryID = "launch_library_id"
@@ -166,16 +175,16 @@ struct Mission {
 
     // MARK: - Links
     struct Links: Codable {
-        let patch: Patch
-        let reddit: Reddit
-        let flickr: Flickr
-        let presskit: JSONNull?
-        let webcast: String
-        let youtubeID: String
+//        let patch: Patch?
+//        let reddit: Reddit?
+//        let flickr: Flickr?
+//        let presskit: JSONNull?
+//        let webcast: String?
+        let youtubeID: String?
         let article, wikipedia: String?
 
         enum CodingKeys: String, CodingKey {
-            case patch, reddit, flickr, presskit, webcast
+//            case patch, reddit, flickr, presskit, webcast
             case youtubeID = "youtube_id"
             case article, wikipedia
         }
@@ -448,26 +457,3 @@ class JSONAny: Codable {
         }
     }
 }
-/*enum CodingKeys: String, CodingKey {
-//            case links
-//            case fairings
-//            case staticFireDateUTC = "static_fire_date_utc"
-//            case staticFireDateUnix = "static_fire_date_unix"
-    case net, window , success, details, ships, capsules, payloads
-//            case launchpad
-//            case rocket
-//            case crew
-    case flightNumber = "flight_number"
-    case name
-    case dateUTC = "date_utc"
-    case dateUnix = "date_unix"
-    case dateLocal = "date_local"
-//            case datePrecision = "date_precision"
-    case upcoming
-//            case cores
-    case autoUpdate = "auto_update"
-    case tbd
-    case launchLibraryID = "launch_library_id"
-    case id
-}
-*/

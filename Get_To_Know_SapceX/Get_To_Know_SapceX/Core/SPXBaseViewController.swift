@@ -1,20 +1,20 @@
 //
-//  HomeViewController.swift
+//  SPXBaseViewController.swift
 //  Get_To_Know_SapceX
 //
-//  Created by Arman Gorj on 6/15/1401 AP.
+//  Created by Arman Gorj on 6/17/1401 AP.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class SPXBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+
         // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation
