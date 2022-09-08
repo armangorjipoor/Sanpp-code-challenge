@@ -22,11 +22,11 @@ extension Date {
         self = Date(timeIntervalSince1970: TimeInterval(milliseconds) / 1000)
     }
     
-    func getCurrentDate() -> String {
-        let todaysDate = Date()
+    static func changeDateFormat(with str: String) -> String {
+        let date = getDate(dateString: str)
         let dateFormatter = DateFormatter() ;
-        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
-        return dateFormatter.string(from: todaysDate)
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy  HH:mm"
+        return dateFormatter.string(from: date)
     }
     
     static var currentDate: String { // For parameter in extra dose acceptance
@@ -66,27 +66,6 @@ extension Date {
         return date
     }
     
-    static func getGreetingDay() -> String {
-        let hour = Calendar.current.component(.hour, from: Date())
-        let NEW_DAY = 0
-        let NOON = 12
-        let SUNSET = 18
-        let MIDNIGHT = 24
-        
-        var greetingText = "Hello" // Default greeting text
-        switch hour {
-        case NEW_DAY..<NOON:
-            greetingText = "Good Morning"
-        case NOON..<SUNSET:
-            greetingText = "Good Afternoon"
-        case SUNSET..<MIDNIGHT:
-            greetingText = "Good Evening"
-        default:
-            _ = "Hello"
-        }
-        
-        return greetingText
-    }
     
     static func getTimeInAM_PM(with date : Date) -> String {
         let formatter = DateFormatter()
@@ -96,26 +75,6 @@ extension Date {
         return time12
     }
     
-    static func convertDateToAM_PM(with dateStr: String) -> String {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "HH:mm:ss"
-//        let date = dateFormatter.date(from: dateStr) ?? Date()
-//
-//        let formatter = DateFormatter()
-//        formatter.locale = Locale(identifier: "en-US")
-//        formatter.dateFormat = "h:ma"//"hh:mm a"
-//        let time12 = formatter.string(from: date)
-        let formatter = DateFormatter()
-        formatter.dateFormat = generateProperDateFormat(with: dateStr)
-        formatter.calendar = Calendar.current
-        let date = formatter.date(from: dateStr)
-        
-        let formatter2 = DateFormatter()
-        formatter2.locale = Locale(identifier: "en-US")
-        formatter2.dateFormat = "hh:mma"
-        
-        return formatter2.string(from: date!)
-    }
     
     //when server send date have second, but when user add second does not have second
     private static func generateProperDateFormat(with str: String) -> String {

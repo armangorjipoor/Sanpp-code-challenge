@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MissionsTableVCell: UITableViewCell {
 
@@ -14,11 +15,26 @@ class MissionsTableVCell: UITableViewCell {
     @IBOutlet weak var fireDateLbl: UILabel!
     @IBOutlet weak var resultLbl: UILabel!
     
+    var setResultState: Bool? {
+        didSet {
+            if let sucess = setResultState {
+                if sucess {
+                    resultLbl.text = "Success"
+                    resultLbl.backgroundColor = .green
+                } else {
+                    resultLbl.text = "Fail"
+                    resultLbl.backgroundColor = .red
+                }
+            } else {
+                resultLbl.text = "Unknow"
+                resultLbl.backgroundColor = .yellow
+            }
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -47,9 +47,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrG-gP-DXf">
-                        <rect key="frame" x="271" y="29" width="41" height="12"/>
+                        <rect key="frame" x="258.5" y="0.0" width="61.5" height="18"/>
                         <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="10"/>
+                        <fontDescription key="fontDescription" name="Roboto-BoldItalic" family="Roboto" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                         <userDefinedRuntimeAttributes>
@@ -60,12 +60,12 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="JrG-gP-DXf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BF2-Cm-bb4"/>
                     <constraint firstItem="jJ8-0r-hAf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="E97-B8-bXX"/>
                     <constraint firstItem="bfu-3b-bcK" firstAttribute="leading" secondItem="jJ8-0r-hAf" secondAttribute="trailing" constant="8" symbolic="YES" id="P0u-73-yHD"/>
                     <constraint firstItem="CGJ-xR-CKv" firstAttribute="bottom" secondItem="jJ8-0r-hAf" secondAttribute="bottom" id="a9i-n9-3Ob"/>
                     <constraint firstItem="bfu-3b-bcK" firstAttribute="top" secondItem="jJ8-0r-hAf" secondAttribute="top" id="aZw-hp-He1"/>
-                    <constraint firstAttribute="trailing" secondItem="JrG-gP-DXf" secondAttribute="trailing" constant="8" id="acY-JX-v7J"/>
-                    <constraint firstItem="JrG-gP-DXf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="als-07-rtf"/>
+                    <constraint firstAttribute="trailing" secondItem="JrG-gP-DXf" secondAttribute="trailing" id="atA-nR-AMt"/>
                     <constraint firstItem="jJ8-0r-hAf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q0i-m2-Ka5"/>
                     <constraint firstItem="CGJ-xR-CKv" firstAttribute="leading" secondItem="jJ8-0r-hAf" secondAttribute="trailing" constant="8" symbolic="YES" id="u0Z-xD-G7y"/>
                 </constraints>

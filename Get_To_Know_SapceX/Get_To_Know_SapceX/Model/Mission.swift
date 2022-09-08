@@ -175,7 +175,7 @@ struct Mission {
 
     // MARK: - Links
     struct Links: Codable {
-//        let patch: Patch?
+        let patch: Patch?
 //        let reddit: Reddit?
 //        let flickr: Flickr?
 //        let presskit: JSONNull?
@@ -184,7 +184,8 @@ struct Mission {
         let article, wikipedia: String?
 
         enum CodingKeys: String, CodingKey {
-//            case patch, reddit, flickr, presskit, webcast
+//            case reddit, flickr, presskit, webcast
+            case patch
             case youtubeID = "youtube_id"
             case article, wikipedia
         }

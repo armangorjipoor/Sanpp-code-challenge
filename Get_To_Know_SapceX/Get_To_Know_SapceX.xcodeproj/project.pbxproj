@@ -29,6 +29,9 @@
 		CC87559628C7597000C80E3E /* Get_To_Know_SapceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC87559528C7597000C80E3E /* Get_To_Know_SapceXTests.swift */; };
 		CC8755A028C7597000C80E3E /* Get_To_Know_SapceXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC87559F28C7597000C80E3E /* Get_To_Know_SapceXUITests.swift */; };
 		CC8755A228C7597000C80E3E /* Get_To_Know_SapceXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8755A128C7597000C80E3E /* Get_To_Know_SapceXUITestsLaunchTests.swift */; };
+		CC99224428C9CE2800624858 /* MissionDetail_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99224228C9CE2700624858 /* MissionDetail_VC.swift */; };
+		CC99224528C9CE2800624858 /* MissionDetail_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC99224328C9CE2700624858 /* MissionDetail_VC.xib */; };
+		CCCA3E8B28C9F69A009BD7B3 /* BookmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA3E8A28C9F69A009BD7B3 /* BookmarkButton.swift */; };
 		CCCC89CA28C9282300D0864F /* MissionsTableVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC89C828C9282300D0864F /* MissionsTableVCell.swift */; };
 		CCCC89CB28C9282300D0864F /* MissionsTableVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCC89C928C9282300D0864F /* MissionsTableVCell.xib */; };
 		CCCC89E528C928DB00D0864F /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC89E428C928BD00D0864F /* UITextField+Extensions.swift */; };
@@ -122,6 +125,9 @@
 		CC87559B28C7597000C80E3E /* Get_To_Know_SapceXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Get_To_Know_SapceXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC87559F28C7597000C80E3E /* Get_To_Know_SapceXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_To_Know_SapceXUITests.swift; sourceTree = "<group>"; };
 		CC8755A128C7597000C80E3E /* Get_To_Know_SapceXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_To_Know_SapceXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC99224228C9CE2700624858 /* MissionDetail_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetail_VC.swift; sourceTree = "<group>"; };
+		CC99224328C9CE2700624858 /* MissionDetail_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionDetail_VC.xib; sourceTree = "<group>"; };
+		CCCA3E8A28C9F69A009BD7B3 /* BookmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkButton.swift; sourceTree = "<group>"; };
 		CCCC89C828C9282300D0864F /* MissionsTableVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsTableVCell.swift; sourceTree = "<group>"; };
 		CCCC89C928C9282300D0864F /* MissionsTableVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionsTableVCell.xib; sourceTree = "<group>"; };
 		CCCC89CF28C928BC00D0864F /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
@@ -213,7 +219,6 @@
 			children = (
 				CC87558928C7596F00C80E3E /* LaunchScreen.storyboard */,
 				CC87558428C7596D00C80E3E /* Main.storyboard */,
-				CC87558728C7596F00C80E3E /* Assets.xcassets */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -300,6 +305,15 @@
 			path = Get_To_Know_SapceXUITests;
 			sourceTree = "<group>";
 		};
+		CC99223F28C9CDCA00624858 /* MissionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CC99224228C9CE2700624858 /* MissionDetail_VC.swift */,
+				CC99224328C9CE2700624858 /* MissionDetail_VC.xib */,
+			);
+			path = MissionDetail;
+			sourceTree = "<group>";
+		};
 		CCCC89C728C927E700D0864F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				CCCC89FB28C92AAB00D0864F /* SPXActivityIndicator.swift */,
+				CCCA3E8A28C9F69A009BD7B3 /* BookmarkButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -358,6 +373,7 @@
 			children = (
 				CCCC8A0628C92FA600D0864F /* Bookmarks */,
 				CCCC8A0528C92F8000D0864F /* Missions */,
+				CC99223F28C9CDCA00624858 /* MissionDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -385,6 +401,7 @@
 		CCCC8A0728C933D500D0864F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				CC87558728C7596F00C80E3E /* Assets.xcassets */,
 				CCCC8A0828C933F300D0864F /* Font */,
 			);
 			path = Resource;
@@ -552,6 +569,7 @@
 				CCCC8A1828C9340600D0864F /* Roboto-Italic.ttf in Resources */,
 				CCCC8A1B28C9340600D0864F /* Roboto-Regular.ttf in Resources */,
 				CC87558828C7596F00C80E3E /* Assets.xcassets in Resources */,
+				CC99224528C9CE2800624858 /* MissionDetail_VC.xib in Resources */,
 				CCCC8A1E28C9340600D0864F /* Roboto-Bold.ttf in Resources */,
 				CC87558628C7596D00C80E3E /* Main.storyboard in Resources */,
 			);
@@ -705,10 +723,12 @@
 				CCCC89ED28C928DB00D0864F /* Optional+Extensions.swift in Sources */,
 				CCCC89E528C928DB00D0864F /* UITextField+Extensions.swift in Sources */,
 				CCCC89EB28C928DB00D0864F /* NotificationName + Extension.swift in Sources */,
+				CC99224428C9CE2800624858 /* MissionDetail_VC.swift in Sources */,
 				CCCC89EF28C928DB00D0864F /* Common+Extensions.swift in Sources */,
 				CCCC89F528C928DB00D0864F /* UIButton+Extension.swift in Sources */,
 				CCCC89EE28C928DB00D0864F /* TimeInterval.swift in Sources */,
 				CCCC8A2728C93FE500D0864F /* Util.swift in Sources */,
+				CCCA3E8B28C9F69A009BD7B3 /* BookmarkButton.swift in Sources */,
 				CCCC89F728C928DB00D0864F /* Date.swift in Sources */,
 				CCCC89E828C928DB00D0864F /* UIView+Extensions.swift in Sources */,
 				CC7E4F6228C76BCF0036A7BE /* Bookmark_VC.swift in Sources */,

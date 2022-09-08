@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 extension Missions_VC: UITableViewDataSource, UITableViewDelegate {
     func registerTableViewCell() {
@@ -19,8 +20,24 @@ extension Missions_VC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MissionCell", for: indexPath) as? MissionsTableVCell else { return UITableViewCell() }
+        
         cell.nameLbl.text = dataModel[indexPath.row].name
-            return cell
+        cell.fireDateLbl.text = Date.changeDateFormat(with: dataModel[indexPath.row].dateUTC)
+        cell.setResultState = dataModel[indexPath.row].success
+        cell.iconImgView.sd_imageIndicator = SDWebImageActivityIndicator.gray
+        cell.iconImgView.sd_setImage(with: URL(string: dataModel[indexPath.row].links?.patch?.small ?? ""),
+                                     placeholderImage: iconPlaceHolderImage,
+                                     options: SDWebImageOptions.highPriority,
+                                     context: nil,
+                                     progress: nil
+                                     , completed:{ [weak self ] downloadedImg, downloadedExptn, cachType, downloadURL in
+            guard let self = self else {return}
+            if downloadedExptn != nil {
+                cell.iconImgView.image = self.iconPlaceHolderImage
+            }
+            
+        })
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

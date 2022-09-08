@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MissionDetail_VC" customModule="Get_To_Know_SapceX" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xha-jS-jfo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmF-Ml-nxf" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpaceX" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kw-6e-GIh">
+                                    <rect key="frame" x="60" y="80" width="294" height="41.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="35"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ipG-Z0-dgX">
+                                    <rect key="frame" x="240" y="8" width="154" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC0-7S-6Zb">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="Gbp-EV-7G3"/>
+                                                <constraint firstAttribute="height" constant="50" id="RS7-ov-51c"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <imageReference key="image" image="safari" catalog="system" symbolScale="large"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OD-Pi-WHt">
+                                            <rect key="frame" x="52" y="0.0" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="QM6-MT-9ES"/>
+                                                <constraint firstAttribute="height" constant="50" id="oaJ-HH-uKH"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <imageReference key="image" image="play.circle" catalog="system" symbolScale="large"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hj4-6Q-Jda">
+                                            <rect key="frame" x="104" y="0.0" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="2RV-wT-r7o"/>
+                                                <constraint firstAttribute="width" constant="50" id="f1y-1C-e88"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <imageReference key="image" image="bookmark" catalog="system" symbolScale="large"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ipG-Z0-dgX" firstAttribute="top" secondItem="KmF-Ml-nxf" secondAttribute="top" constant="8" id="6Q6-LY-Mf9"/>
+                                <constraint firstItem="8kw-6e-GIh" firstAttribute="leading" secondItem="KmF-Ml-nxf" secondAttribute="leading" constant="60" id="9Zv-oX-wNC"/>
+                                <constraint firstItem="8kw-6e-GIh" firstAttribute="centerX" secondItem="KmF-Ml-nxf" secondAttribute="centerX" id="PKz-Wk-faE"/>
+                                <constraint firstItem="8kw-6e-GIh" firstAttribute="top" secondItem="KmF-Ml-nxf" secondAttribute="top" constant="80" id="S8x-O4-c1N"/>
+                                <constraint firstAttribute="trailing" secondItem="ipG-Z0-dgX" secondAttribute="trailing" constant="20" symbolic="YES" id="doD-lx-k5m"/>
+                                <constraint firstAttribute="trailing" secondItem="8kw-6e-GIh" secondAttribute="trailing" constant="60" id="vIn-5u-bM5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="KmF-Ml-nxf" firstAttribute="top" secondItem="xha-jS-jfo" secondAttribute="top" id="2XK-Ti-BGk"/>
+                        <constraint firstAttribute="trailing" secondItem="KmF-Ml-nxf" secondAttribute="trailing" id="Iq6-rK-K4b"/>
+                        <constraint firstItem="KmF-Ml-nxf" firstAttribute="height" secondItem="xha-jS-jfo" secondAttribute="height" priority="250" id="JOY-bc-t8e"/>
+                        <constraint firstAttribute="bottom" secondItem="KmF-Ml-nxf" secondAttribute="bottom" id="M2f-0J-jQp"/>
+                        <constraint firstItem="KmF-Ml-nxf" firstAttribute="leading" secondItem="xha-jS-jfo" secondAttribute="leading" id="in5-Rb-hXZ"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xha-jS-jfo" secondAttribute="bottom" id="7Vt-gj-nPU"/>
+                <constraint firstItem="xha-jS-jfo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="D8T-YE-NaI"/>
+                <constraint firstItem="xha-jS-jfo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="P3h-pH-E01"/>
+                <constraint firstItem="KmF-Ml-nxf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="YeR-Sl-BGR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xha-jS-jfo" secondAttribute="trailing" id="drf-wV-eQO"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
