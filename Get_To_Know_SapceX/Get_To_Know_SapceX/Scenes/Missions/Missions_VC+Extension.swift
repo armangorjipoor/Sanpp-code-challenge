@@ -43,4 +43,10 @@ extension Missions_VC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         70.0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailMissionVC = MissionDetail_VC()
+        detailMissionVC.mission = dataModel[indexPath.row]
+        self.navigationController?.pushViewController(detailMissionVC, animated: true)
+    }
 }

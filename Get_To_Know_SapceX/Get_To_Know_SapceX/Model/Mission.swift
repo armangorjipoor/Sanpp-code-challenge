@@ -19,7 +19,6 @@ struct Mission {
             get {
                 return [HTTPHeader(name: "Content-Type", value: "application/json"),
                         HTTPHeader(name: "Accept", value: "application/json")]
-                
             }
         }
         
@@ -67,9 +66,9 @@ struct Mission {
         
 //        let net: Bool
 //        let window: Int?
-//        let rocket: Rocket
+        let rocket: String?
         let success: Bool?
-          let details: String?
+        let details: String?
         /* let crew: [Crew]
         let ships, capsules, payloads: [String]*/
         
@@ -98,7 +97,7 @@ struct Mission {
             case success
 //            case window
 //            case launchpad
-//            case rocket
+            case rocket
 //            case crew
 //            case flightNumber = "flight_number"
             case name
@@ -179,15 +178,15 @@ struct Mission {
 //        let reddit: Reddit?
 //        let flickr: Flickr?
 //        let presskit: JSONNull?
-//        let webcast: String?
+        let webcast: String?
         let youtubeID: String?
-        let article, wikipedia: String?
+        let wikipedia: String?
 
         enum CodingKeys: String, CodingKey {
 //            case reddit, flickr, presskit, webcast
             case patch
             case youtubeID = "youtube_id"
-            case article, wikipedia
+            case webcast, wikipedia
         }
     }
 
