@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		904EF2D71A41D73A33BA61DA /* Pods_Get_To_Know_SapceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4695914DD918019306AA7E /* Pods_Get_To_Know_SapceX.framework */; };
 		90A3AD000C86F39748A9BE87 /* Pods_Get_To_Know_SapceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5796F167C224C0841CFBCF4 /* Pods_Get_To_Know_SapceXTests.framework */; };
+		CC618CA228CBC04000FEE54C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC618CA128CBC04000FEE54C /* DataManager.swift */; };
+		CC618CA428CBD09700FEE54C /* MissionOffline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC618CA328CBD09700FEE54C /* MissionOffline.swift */; };
+		CC618CA628CBDB0800FEE54C /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC618CA528CBDB0800FEE54C /* Reachibility.swift */; };
 		CC7E4F4C28C761E00036A7BE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F4B28C761E00036A7BE /* Service.swift */; };
 		CC7E4F4E28C762100036A7BE /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F4D28C762100036A7BE /* ServiceHelper.swift */; };
 		CC7E4F5028C762450036A7BE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F4F28C762450036A7BE /* NetworkError.swift */; };
@@ -31,6 +34,7 @@
 		CC8755A228C7597000C80E3E /* Get_To_Know_SapceXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8755A128C7597000C80E3E /* Get_To_Know_SapceXUITestsLaunchTests.swift */; };
 		CC99224428C9CE2800624858 /* MissionDetail_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99224228C9CE2700624858 /* MissionDetail_VC.swift */; };
 		CC99224528C9CE2800624858 /* MissionDetail_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC99224328C9CE2700624858 /* MissionDetail_VC.xib */; };
+		CCAF5F2D28CB390400ECC615 /* WikiWeb_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAF5F2C28CB390400ECC615 /* WikiWeb_VC.swift */; };
 		CCBFFC3628CA6459007E4065 /* MissionDetail_VC + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBFFC3528CA6459007E4065 /* MissionDetail_VC + Extension.swift */; };
 		CCBFFC3928CA7CFC007E4065 /* MissionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBFFC3828CA7CFC007E4065 /* MissionDetail.swift */; };
 		CCCA3E8B28C9F69A009BD7B3 /* BookmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA3E8A28C9F69A009BD7B3 /* BookmarkButton.swift */; };
@@ -103,6 +107,9 @@
 		3CE3F95782FC4967D70A670D /* Pods-Get_To_Know_SapceX-Get_To_Know_SapceXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get_To_Know_SapceX-Get_To_Know_SapceXUITests.debug.xcconfig"; path = "Target Support Files/Pods-Get_To_Know_SapceX-Get_To_Know_SapceXUITests/Pods-Get_To_Know_SapceX-Get_To_Know_SapceXUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B4695914DD918019306AA7E /* Pods_Get_To_Know_SapceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_To_Know_SapceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		899957DCEA31B8A0CBBD32D0 /* Pods-Get_To_Know_SapceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get_To_Know_SapceX.release.xcconfig"; path = "Target Support Files/Pods-Get_To_Know_SapceX/Pods-Get_To_Know_SapceX.release.xcconfig"; sourceTree = "<group>"; };
+		CC618CA128CBC04000FEE54C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CC618CA328CBD09700FEE54C /* MissionOffline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionOffline.swift; sourceTree = "<group>"; };
+		CC618CA528CBDB0800FEE54C /* Reachibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachibility.swift; sourceTree = "<group>"; };
 		CC7E4F4B28C761E00036A7BE /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CC7E4F4D28C762100036A7BE /* ServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
 		CC7E4F4F28C762450036A7BE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -129,6 +136,7 @@
 		CC8755A128C7597000C80E3E /* Get_To_Know_SapceXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get_To_Know_SapceXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CC99224228C9CE2700624858 /* MissionDetail_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetail_VC.swift; sourceTree = "<group>"; };
 		CC99224328C9CE2700624858 /* MissionDetail_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionDetail_VC.xib; sourceTree = "<group>"; };
+		CCAF5F2C28CB390400ECC615 /* WikiWeb_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiWeb_VC.swift; sourceTree = "<group>"; };
 		CCBFFC3528CA6459007E4065 /* MissionDetail_VC + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MissionDetail_VC + Extension.swift"; sourceTree = "<group>"; };
 		CCBFFC3828CA7CFC007E4065 /* MissionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetail.swift; sourceTree = "<group>"; };
 		CCCA3E8A28C9F69A009BD7B3 /* BookmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkButton.swift; sourceTree = "<group>"; };
@@ -314,6 +322,7 @@
 			children = (
 				CCBFFC3728CA69BB007E4065 /* Cell */,
 				CC99224228C9CE2700624858 /* MissionDetail_VC.swift */,
+				CCAF5F2C28CB390400ECC615 /* WikiWeb_VC.swift */,
 				CCBFFC3528CA6459007E4065 /* MissionDetail_VC + Extension.swift */,
 				CC99224328C9CE2700624858 /* MissionDetail_VC.xib */,
 			);
@@ -332,6 +341,8 @@
 			children = (
 				CC7E4F6628C76DAE0036A7BE /* Mission.swift */,
 				CCBFFC3828CA7CFC007E4065 /* MissionDetail.swift */,
+				CC618CA328CBD09700FEE54C /* MissionOffline.swift */,
+				CC618CA128CBC04000FEE54C /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -444,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				CCCC8A2628C93FE500D0864F /* Util.swift */,
+				CC618CA528CBDB0800FEE54C /* Reachibility.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -716,10 +728,12 @@
 				CC7E4F4E28C762100036A7BE /* ServiceHelper.swift in Sources */,
 				CC87558328C7596D00C80E3E /* ViewController.swift in Sources */,
 				CCCC89E728C928DB00D0864F /* UIApplication+Extensions.swift in Sources */,
+				CC618CA228CBC04000FEE54C /* DataManager.swift in Sources */,
 				CCCC89EC28C928DB00D0864F /* UITableView+Extention.swift in Sources */,
 				CCCC89F928C928DB00D0864F /* String+Extensions.swift in Sources */,
 				CC7E4F6528C76D710036A7BE /* HttpMethod.swift in Sources */,
 				CC7E4F5B28C767580036A7BE /* SPXTabBarController.swift in Sources */,
+				CC618CA428CBD09700FEE54C /* MissionOffline.swift in Sources */,
 				CCCC89E628C928DB00D0864F /* GradientLayer.swift in Sources */,
 				CCCC89FC28C92AAB00D0864F /* SPXActivityIndicator.swift in Sources */,
 				CCCC8A2228C9363100D0864F /* Missions_VC+Extension.swift in Sources */,
@@ -749,6 +763,7 @@
 				CCCC8A0228C92E0300D0864F /* Missions_VC.swift in Sources */,
 				CCCC89F028C928DB00D0864F /* Locale+Extensions.swift in Sources */,
 				CCBFFC3628CA6459007E4065 /* MissionDetail_VC + Extension.swift in Sources */,
+				CC618CA628CBDB0800FEE54C /* Reachibility.swift in Sources */,
 				CC7E4F5528C762AC0036A7BE /* Network+Description.swift in Sources */,
 				CCCC89F628C928DB00D0864F /* UIViewController+Extensions.swift in Sources */,
 				CC7E4F5728C766BF0036A7BE /* AppManager.swift in Sources */,
@@ -756,6 +771,7 @@
 				CC87557F28C7596D00C80E3E /* AppDelegate.swift in Sources */,
 				CC87558128C7596D00C80E3E /* SceneDelegate.swift in Sources */,
 				CCCC89FA28C928DB00D0864F /* NavigationBar.swift in Sources */,
+				CCAF5F2D28CB390400ECC615 /* WikiWeb_VC.swift in Sources */,
 				CCCC89E928C928DB00D0864F /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,7 @@ class Missions_VC: SPXBaseViewController {
     
     //TableView Pagination
     var currentPage: Int = 1
+    var smallImg: UIImage?
     
     var iconPlaceHolderImage = UIImage(named: "MissionPLaceHolder")
     @IBOutlet weak var tableView: UITableView!

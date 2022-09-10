@@ -9,21 +9,26 @@ import UIKit
 
 class SPXBaseViewController: UIViewController {
 
+    typealias Completion = (UIAlertAction) -> Void
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showAlert(with title: String,
+                   body: String,
+                   actionTitle: String? = nil,
+                   completion: @escaping Completion) {
+        
+        let alertcontroller = UIAlertController(title: title, message: body, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        alertcontroller.addAction(cancelAction)
+        if let actionTitle = actionTitle {
+            let okAction = UIAlertAction(title: actionTitle, style: .default, handler: completion)
+            alertcontroller.addAction(okAction)
+        }
+        self.present(alertcontroller, animated: true)
     }
-    */
 
 }

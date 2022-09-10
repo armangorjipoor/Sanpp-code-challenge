@@ -12,6 +12,7 @@ class MissionDetail_VC: SPXBaseViewController {
     
     //For detail from Missions
     var mission: Mission.Doc?
+    var smallImg: UIImage?
     
     private var missionDetail: MissionDetail!
     
@@ -29,6 +30,9 @@ class MissionDetail_VC: SPXBaseViewController {
         bookmarkBtn.completion = { slctState in
             if slctState {
                 print("Slc")
+                self.showAlert(with: "Error", body: "Do you want to continue", actionTitle: "Ok", completion: { action in
+                    print("Di this completion")
+                })
             } else {
                 print("Uns")
             }
@@ -38,7 +42,7 @@ class MissionDetail_VC: SPXBaseViewController {
     
     func setup() {
         if let mission = mission {
-            let missionDetail = MissionDetail(mission: mission)
+            missionDetail = MissionDetail(mission: mission)
             
             fillMissionDetailUI(with: missionDetail)
             if missionDetail.wikiURL == nil { wikiBtn.removeFromSuperview() }
@@ -60,5 +64,10 @@ class MissionDetail_VC: SPXBaseViewController {
     
     @IBAction func linkBtnTapped(_ sender: UIButton) {
         
+        let webVC = WikiWeb_VC()
+        webVC.url = missionDetail.wikiURL
+        webVC.modalTransitionStyle = .coverVertical
+        webVC.modalPresentationStyle = .overCurrentContext
+        self.present(webVC, animated: true)
     }
 }

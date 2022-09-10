@@ -7,6 +7,7 @@ target 'Get_To_Know_SapceX' do
 
   pod 'UIScrollView-InfiniteScroll', '~> 1.3.0'
   pod 'SDWebImage'
+  pod 'Kingfisher', '~> 7.0'
 
   target 'Get_To_Know_SapceXTests' do
     inherit! :search_paths
