@@ -33,8 +33,9 @@ extension Missions_VC: UITableViewDataSource, UITableViewDelegate {
                                      , completed:{ [weak self ] downloadedImg, downloadedExptn, cachType, downloadURL in
             guard let self = self else {return}
             if downloadedExptn != nil {
-                self.smallImg = downloadedImg
                 cell.iconImgView.image = self.iconPlaceHolderImage
+            } else {
+                self.smallImg = downloadedImg
             }
             
         })

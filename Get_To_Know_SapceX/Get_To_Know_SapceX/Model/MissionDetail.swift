@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
-class MissionDetail {
+class MissionDetail: Codable {
     var mission: Mission.Doc
     var satelliteName: String
     var id: String
@@ -43,19 +44,28 @@ class MissionDetail {
         }
     }
     
-    func setSmall(image: UIImage) {
-        
+    func set(smallImage: UIImage,and largeImage: UIImage) {
+        setSmall(image: smallImage)
+        setLarge(image: largeImage)
     }
     
-    func getSmallImage() -> UIImage? {
-        
+    private func setSmall(image: UIImage) {
+        ImageCache.default.store(image, forKey: smallImgName)
     }
     
-    func setLarge(image: UIImage) {
-        
+    func getSmallImage(completion: @escaping (_ image: Result<ImageCacheResult, KingfisherError>)->Void) {
+        ImageCache.default.retrieveImage(forKey: smallImgName, options: nil) { image in
+            return completion(image)
+        }
     }
     
-    func getLargeImage() -> UIImage? {
-        
+    private func setLarge(image: UIImage) {
+        ImageCache.default.store(image, forKey: smallImgName)
+    }
+    
+    func getLargeImage(completion: @escaping (_ image: Result<ImageCacheResult, KingfisherError>)->Void) {
+        ImageCache.default.retrieveImage(forKey: lareImgName, options: nil) { image in
+            return completion(image)
+        }
     }
 }

@@ -13,6 +13,7 @@ class MissionDetail_VC: SPXBaseViewController {
     //For detail from Missions
     var mission: Mission.Doc?
     var smallImg: UIImage?
+    var largeImg: UIImage?
     
     private var missionDetail: MissionDetail!
     
@@ -22,17 +23,17 @@ class MissionDetail_VC: SPXBaseViewController {
     @IBOutlet weak var satelliteNameLbl: UILabel!
     @IBOutlet weak var detailLbl: UILabel!
     @IBOutlet weak var satelliteImgView: UIImageView!
-//    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        bookmarkBtn.completion = { slctState in
+        bookmarkBtn.completion = { [weak self] slctState in
+            guard let self = self else {return}
             if slctState {
                 print("Slc")
-                self.showAlert(with: "Error", body: "Do you want to continue", actionTitle: "Ok", completion: { action in
-                    print("Di this completion")
-                })
+                DataManager.shared.add(item: self.missionDetail)
+                self.missionDetail.set(smallImage: self.smallImg ?? UIImage(),
+                                       and: self.largeImg ?? UIImage())
             } else {
                 print("Uns")
             }
@@ -41,20 +42,35 @@ class MissionDetail_VC: SPXBaseViewController {
     }
     
     func setup() {
+        bookmarkBtn.isEnabled = false
         if let mission = mission {
             missionDetail = MissionDetail(mission: mission)
-            
             fillMissionDetailUI(with: missionDetail)
             if missionDetail.wikiURL == nil { wikiBtn.removeFromSuperview() }
             if missionDetail.videoURL == nil { videoBtn.removeFromSuperview() }
         }
-        
         satelliteImgView.sd_imageIndicator = SDWebImageActivityIndicator.gray
     }
     
     private func fillMissionDetailUI(with msn: MissionDetail) {
         satelliteNameLbl.text = msn.satelliteName
-        satelliteImgView.sd_setImage(with: msn.largeImgURL)
+        satelliteImgView.sd_setImage(with: msn.largeImgURL,
+                                     placeholderImage: nil,
+                                     options: SDWebImageOptions.highPriority,
+                                     context: nil,
+                                     progress: nil
+                                     , completed:{ [weak self ] downloadedImg, downloadedExptn, cachType, downloadURL in
+            guard let self = self else {return}
+            if downloadedExptn != nil {
+                
+            } else {
+                self.largeImg = downloadedImg
+                //Enable when download compeleted
+                self.bookmarkBtn.isEnabled = true
+                
+            }
+            
+        })
         detailLbl.text = msn.detail
     }
     
@@ -69,5 +85,11 @@ class MissionDetail_VC: SPXBaseViewController {
         webVC.modalTransitionStyle = .coverVertical
         webVC.modalPresentationStyle = .overCurrentContext
         self.present(webVC, animated: true)
+    }
+    
+    @IBAction func moreDetailBtnTap(_ sender: UIButton) {
+        DataManager.shared.savedMissions.first!.getLargeImage { resu in
+            print(resu)
+        }
     }
 }

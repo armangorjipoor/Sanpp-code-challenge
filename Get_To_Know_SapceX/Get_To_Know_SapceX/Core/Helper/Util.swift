@@ -23,6 +23,6 @@ struct Util {
     
     static func logDocumentDirectory() {
         guard let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else {return}
-        print(path)
+        print("📂 Document Directory: \(path)")
     }
 }

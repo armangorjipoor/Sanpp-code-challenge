@@ -19,7 +19,7 @@
 		CC7E4F5528C762AC0036A7BE /* Network+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F5428C762AC0036A7BE /* Network+Description.swift */; };
 		CC7E4F5728C766BF0036A7BE /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F5628C766BF0036A7BE /* AppManager.swift */; };
 		CC7E4F5B28C767580036A7BE /* SPXTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F5A28C767580036A7BE /* SPXTabBarController.swift */; };
-		CC7E4F6228C76BCF0036A7BE /* Bookmark_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F6028C76BCF0036A7BE /* Bookmark_VC.swift */; };
+		CC7E4F6228C76BCF0036A7BE /* Bookmarks_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F6028C76BCF0036A7BE /* Bookmarks_VC.swift */; };
 		CC7E4F6328C76BCF0036A7BE /* BookMark_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC7E4F6128C76BCF0036A7BE /* BookMark_VC.xib */; };
 		CC7E4F6528C76D710036A7BE /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F6428C76D710036A7BE /* HttpMethod.swift */; };
 		CC7E4F6728C76DAE0036A7BE /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7E4F6628C76DAE0036A7BE /* Mission.swift */; };
@@ -117,7 +117,7 @@
 		CC7E4F5428C762AC0036A7BE /* Network+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Description.swift"; sourceTree = "<group>"; };
 		CC7E4F5628C766BF0036A7BE /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		CC7E4F5A28C767580036A7BE /* SPXTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPXTabBarController.swift; sourceTree = "<group>"; };
-		CC7E4F6028C76BCF0036A7BE /* Bookmark_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark_VC.swift; sourceTree = "<group>"; };
+		CC7E4F6028C76BCF0036A7BE /* Bookmarks_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmarks_VC.swift; sourceTree = "<group>"; };
 		CC7E4F6128C76BCF0036A7BE /* BookMark_VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMark_VC.xib; sourceTree = "<group>"; };
 		CC7E4F6428C76D710036A7BE /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		CC7E4F6628C76DAE0036A7BE /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
@@ -417,7 +417,7 @@
 		CCCC8A0628C92FA600D0864F /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
-				CC7E4F6028C76BCF0036A7BE /* Bookmark_VC.swift */,
+				CC7E4F6028C76BCF0036A7BE /* Bookmarks_VC.swift */,
 				CC7E4F6128C76BCF0036A7BE /* BookMark_VC.xib */,
 			);
 			path = Bookmarks;
@@ -759,7 +759,7 @@
 				CCCA3E8B28C9F69A009BD7B3 /* BookmarkButton.swift in Sources */,
 				CCCC89F728C928DB00D0864F /* Date.swift in Sources */,
 				CCCC89E828C928DB00D0864F /* UIView+Extensions.swift in Sources */,
-				CC7E4F6228C76BCF0036A7BE /* Bookmark_VC.swift in Sources */,
+				CC7E4F6228C76BCF0036A7BE /* Bookmarks_VC.swift in Sources */,
 				CCCC8A0228C92E0300D0864F /* Missions_VC.swift in Sources */,
 				CCCC89F028C928DB00D0864F /* Locale+Extensions.swift in Sources */,
 				CCBFFC3628CA6459007E4065 /* MissionDetail_VC + Extension.swift in Sources */,
@@ -950,6 +950,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5V28598P5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Get_To_Know_SapceX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -957,6 +958,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -978,6 +980,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5V28598P5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Get_To_Know_SapceX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -985,6 +988,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

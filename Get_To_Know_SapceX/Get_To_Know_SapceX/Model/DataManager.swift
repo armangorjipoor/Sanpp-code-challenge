@@ -12,8 +12,8 @@ class DataManager {
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
     
-    let shared = DataManager()
-    var savedMissions = [Mission.Doc]()
+    static let shared = DataManager()
+    var savedMissions = [MissionDetail]()
     var savedSmallImg = UIImage()
     var savedLargeImg = UIImage()
     
@@ -21,9 +21,9 @@ class DataManager {
         
     }
     
-    private func load() -> [MissionOffline] {
-        
-    }
+//    private func load() -> [MissionDetail] {
+//
+//    }
     
     private func saveMissions() {
         do {
@@ -34,16 +34,21 @@ class DataManager {
             
         }
     }
-    
-    private func saveImages() {
-       // save
-    }
-    
+  
     private func saveToDisk(data: Data) {
-        
+        let path = FileManager.default.urls(for: .documentDirectory,
+                                            in: .userDomainMask)[0].appendingPathComponent("SavedMissions")
+        do {
+            try data.write(to: path)
+            Util.logDocumentDirectory()
+        } catch {
+            print("Errorr in saveing")
+        }
     }
     
-    func add(item: MissionDetail, smallImg: UIImage, largeImg: UIImage) {
-        
+    
+    func add(item: MissionDetail) {
+        savedMissions.append(item)
+        saveMissions()
     }
 }
