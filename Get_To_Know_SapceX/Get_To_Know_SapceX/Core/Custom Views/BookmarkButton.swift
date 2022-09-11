@@ -15,7 +15,7 @@ class BookmarkButton: UIButton {
     private var slctedImg = UIImage(systemName: "bookmark.fill")
     private var unSlctedImg = UIImage(systemName: "bookmark")
         
-    private var setSelected: Bool = false {
+    var setSelected: Bool = false {
         didSet {
             if setSelected {
                 self.setImage(slctedImg, for: .normal)

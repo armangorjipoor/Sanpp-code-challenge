@@ -7,16 +7,9 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Roboto-Medium.ttf">
-            <string>Roboto-Medium</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Missions_VC" customModule="Get_To_Know_SapceX" customModuleProvider="target">
             <connections>
-                <outlet property="failImgView" destination="jjF-zH-02o" id="bbw-AC-lJT"/>
-                <outlet property="failLbl" destination="YzO-9d-VOs" id="R1j-DM-ggN"/>
                 <outlet property="tableView" destination="Ml9-Xe-ByT" id="bQ4-kc-28T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,31 +27,14 @@
                         <outlet property="delegate" destination="-1" id="2ar-iZ-ETF"/>
                     </connections>
                 </tableView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jjF-zH-02o">
-                    <rect key="frame" x="47" y="318" width="320" height="260"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="320" id="UrK-Ho-VlG"/>
-                        <constraint firstAttribute="height" constant="260" id="gPn-Er-rcq"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-9d-VOs">
-                    <rect key="frame" x="182.5" y="603" width="49" height="24"/>
-                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
-                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Ml9-Xe-ByT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FuW-e8-DBO"/>
-                <constraint firstItem="jjF-zH-02o" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LlY-dW-CMc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ml9-Xe-ByT" secondAttribute="bottom" id="OPA-fA-AeT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ml9-Xe-ByT" secondAttribute="trailing" id="cMV-9F-mGX"/>
                 <constraint firstItem="Ml9-Xe-ByT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jHo-vW-8cN"/>
-                <constraint firstItem="YzO-9d-VOs" firstAttribute="top" secondItem="jjF-zH-02o" secondAttribute="bottom" constant="25" id="lhS-6s-kxG"/>
-                <constraint firstItem="jjF-zH-02o" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oy2-ru-I5d"/>
-                <constraint firstItem="YzO-9d-VOs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qq1-qb-fr3"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>

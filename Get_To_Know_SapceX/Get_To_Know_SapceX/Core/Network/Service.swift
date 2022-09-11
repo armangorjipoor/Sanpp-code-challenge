@@ -9,7 +9,8 @@ import Foundation
 
 class Service {
     
-    public static func tempRequest(request: Mission.Request,
+    
+    public static func getMissions(request: Mission.Request,
                                    completion:
                                    @escaping (Result<Mission.Response, NetworkError>) -> Void) {
         
@@ -22,7 +23,9 @@ class Service {
                 if let networkError = NetworkError(data: data, response: response, error: error) {
                     completion(.failure(networkError))
                 }
-                guard let data = data else { return }
+                guard let data = data else {completion(.failure(.noData))
+                    return
+                }
                 do {
                     let result = try JSONDecoder().decode(Mission.Response.self, from: data)
                     completion(.success(result))

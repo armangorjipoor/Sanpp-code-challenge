@@ -60,7 +60,7 @@ class MissionDetail: Codable {
     }
     
     private func setLarge(image: UIImage) {
-        ImageCache.default.store(image, forKey: smallImgName)
+        ImageCache.default.store(image, forKey: lareImgName)
     }
     
     func getLargeImage(completion: @escaping (_ image: Result<ImageCacheResult, KingfisherError>)->Void) {
@@ -68,4 +68,5 @@ class MissionDetail: Codable {
             return completion(image)
         }
     }
+    
 }

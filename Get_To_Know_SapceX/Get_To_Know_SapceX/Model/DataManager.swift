@@ -18,12 +18,20 @@ class DataManager {
     var savedLargeImg = UIImage()
     
     private init() {
-        
+        savedMissions = load()
     }
     
-//    private func load() -> [MissionDetail] {
-//
-//    }
+    func load() -> [MissionDetail] {
+        var paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        var getImagePath = paths.appendingPathComponent("SavedMissions")
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: getImagePath))
+            let res = try decoder.decode([MissionDetail].self, from: data)
+            return res
+        } catch {
+            return []
+        }
+    }
     
     private func saveMissions() {
         do {
@@ -46,9 +54,33 @@ class DataManager {
         }
     }
     
+    deinit {
+        print("Deinit DataManager")
+    }
     
+    
+    /// add saved item in savedMission
+    /// - Parameter item: item to be saved
     func add(item: MissionDetail) {
         savedMissions.append(item)
         saveMissions()
+    }
+    
+    /// remove saved item in savedMission
+    /// - Parameter item: item to be removed
+    func remove(item: MissionDetail) {
+        if let index = findRemoveIndex(item: item) {
+            savedMissions.remove(at: index)
+            saveMissions()
+        }
+    }
+    
+    private func findRemoveIndex(item: MissionDetail) -> Int? {
+        for (index, item) in savedMissions.enumerated() {
+            if item.id == item.id {
+                return index
+            }
+        }
+        return nil
     }
 }

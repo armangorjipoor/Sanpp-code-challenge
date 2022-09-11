@@ -1,10 +1,6 @@
 //
 //  Device.swift
 //
-//  Created by Kevin Xu on 2/9/15. Updated on 6/20/15.
-//  Updated by Rodrigo L G on 2/23/18.
-//  Copyright (c) 2015 Alpha Labs, Inc. All rights reserved.
-//
 
 import Foundation
 import UIKit

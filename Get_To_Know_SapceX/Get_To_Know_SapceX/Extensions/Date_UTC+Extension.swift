@@ -1,63 +1,11 @@
 //
 //  Date_UTC+Extension.swift
-//  Levl
 //
-//  Created by Henry Gorj on 06/06/2022 AP.
-//  Copyright © 2022 AP ARS NETWORK (M) SDN BHD. All rights reserved.
 //
 
 import Foundation
 extension Date {
-//    private static func getCurrentTimeInUTC() -> String {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-//        dateFormatter.dateFormat = "HH:mm"
-//        return "\(dateFormatter.string(from: Date()))"
-//    }
-    
-//    private static func getCurrentTime() -> String {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-//        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
-//        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
-//        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-//        return "\(dateFormatter.string(from: Date()))"
-//    }
-    
-//   static func getDifferenceFromUTC() -> String {
-//        let RFC3339DateFormatter = DateFormatter()
-////        RFC3339DateFormatter.locale = Locale(identifier: "en_US_POSIX")
-//        RFC3339DateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
-//        RFC3339DateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
-//        RFC3339DateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-//
-//        let string1 = getCurrentTime()
-//        let date1 = RFC3339DateFormatter.date(from: string1)
-//        let string2 = getCurrentTimeInUTC()
-//        let date2 = RFC3339DateFormatter.date(from: string2)
-//
-//        if let d1 = date1, let d2 = date2 {
-//            let result = Calendar.current.dateComponents([.year, .hour, .minute], from: d2, to: d1)
-//            let houreDiffernce = result.hour!
-//            let minutesDiffernce = abs(result.minute!)
-//            let diffRes = "\(String(houreDiffernce)):\(minutesDiffernce)"
-//
-//            return diffRes
-//        } else {
-//            return "-3"
-//        }
-//    }
-    
-       static func getDifferenceFromUTC() -> String {
-//           let utc = getUTCTimeInH_M()
-//           let current = getCurrentTimeInH_M()
-//           
-//           let hourDiff =   current.hour - utc.hour
-//           let minDiff = abs(current.min - utc.min)
-           
-           return TimeZone.current.currentTimezoneOffset()
-           
-       }
+
     private static func getCurrentTimeInH_M() -> (hour: Int, min: Int) {
         let date = Date()
         let currentCal = Calendar.current

@@ -1,9 +1,7 @@
 //
 //  Date.swift
 //
-//  Created by iOSDev on 11/18/19.
-//  Copyright © 2019 ARS NETWORK (M) SDN BHD. All rights reserved.
-//
+
 
 import Foundation
 

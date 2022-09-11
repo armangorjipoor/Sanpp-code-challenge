@@ -35,7 +35,6 @@ extension Missions_VC: UITableViewDataSource, UITableViewDelegate {
             if downloadedExptn != nil {
                 cell.iconImgView.image = self.iconPlaceHolderImage
             } else {
-                self.smallImg = downloadedImg
             }
             
         })
@@ -47,9 +46,10 @@ extension Missions_VC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! MissionsTableVCell
         let detailMissionVC = MissionDetail_VC()
         detailMissionVC.mission = dataModel[indexPath.row]
-        detailMissionVC.smallImg = smallImg
+        detailMissionVC.smallImg = cell.iconImgView.image
         self.navigationController?.pushViewController(detailMissionVC, animated: true)
     }
 }

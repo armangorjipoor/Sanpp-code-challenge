@@ -17,7 +17,7 @@ class SPXActivityIndicator: UIView {
     private let blurView = UIVisualEffectView()
     
     var activitySuperView: UIView!
-    var label: String! {
+    var label: String = "" {
         didSet {
             activityLabel.text = label
         }
